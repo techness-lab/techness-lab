@@ -40,9 +40,16 @@
                             <p class="banner_pera"> Freelance </p>
                             <div class="banner_typingtext">
                                 <ul class="texts home-desc">
-                                    <li class="list-inline-item">Web & Mobile UI/UX Designer</li>
-                                    <li class="list-inline-item">Front End Developer</li>
-                                    <li class="list-inline-item">Web Designer & Developer</li>
+                                    <vue-typed-js
+                                            :backDelay="1000"
+                                            :fadeOut="true"
+                                            :loop="true"
+                                            :startDelay="1000"
+                                            :strings="['Lorem', 'ispum', 'dolor']"
+                                            :typeSpeed="100"
+                                    >
+                                        <li class="list-inline-item typing"></li>
+                                    </vue-typed-js>
                                 </ul>
                             </div>
                             <div class="banner_btn">

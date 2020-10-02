@@ -1,10 +1,15 @@
 <template src="./blog.html">
-    
+
 </template>
 
 <script>
+    import BlogPost from "./components/blog-post/BlogPost";
+
     export default {
-        name: "blog"
+        name: "blog",
+        components: {
+            BlogPost
+        }
     }
 </script>
 

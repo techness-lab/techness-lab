@@ -1,10 +1,10 @@
-<template src="./progress.html">
+<template src="skills.html">
     
 </template>
 
 <script>
     export default {
-        name: "progress"
+        name: "skills"
     }
 </script>
 

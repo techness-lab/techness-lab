@@ -4,7 +4,15 @@
 
 <script>
     export default {
-        name: "banner"
+        name: "banner",
+        methods: {
+            bannerBeforeEnter: function (el) {
+                el.style.transform = 'scale(0)';
+            },
+            bannerEnter: function (el) {
+                el.style.transform = 'scale(1)';
+            }
+        }
     }
 </script>
 

@@ -3,7 +3,8 @@
 
 <script>
     export default {
-        name: "BlogPost"
+        name: "BlogPost",
+        props: ['layout']
     }
 </script>
 

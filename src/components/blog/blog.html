@@ -10,13 +10,12 @@
                         <h1 class="port_heading">Recent News</h1>
                     </div>
                 </div>
-
                 <div class="col-md-12 col-lg-4">
-                    <blog-post></blog-post>
+                    <blog-post v-bind:layout="'vertical_content'"></blog-post>
                 </div>
                 <div class="col-lg-8 col-md-12 ">
-                    <blog-post></blog-post>
-                    <blog-post></blog-post>
+                    <blog-post v-bind:layout="'left_content'"></blog-post>
+                    <blog-post v-bind:layout="'right_content'"></blog-post>
                 </div>
             </div>
         </div>

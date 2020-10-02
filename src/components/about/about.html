@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-12 col-md-12">
-                    <div class="about_leftsection ">
+                    <div :class="{ open_details: openDetails }" @click="toggleDetails" class="about_leftsection">
                         <div class="img_warapper">
                             <img alt="About" class="img-fluid" src="http://via.placeholder.com/445x490"
                                  title="more information click + icon">
@@ -31,7 +31,8 @@
                                             class="value">+0123 789 123 456 </span></li>
                                     <li><span class="title">Skype</span><span
                                             class="value">Caseyj.mullins</span></li>
-                                    <li><span class="title">Freelance</span><span class="value available">Available</span>
+                                    <li><span class="title">Freelance</span><span
+                                            class="value available">Available</span>
                                     </li>
                                 </ul>
 

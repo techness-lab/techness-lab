@@ -265,7 +265,7 @@ Assigned to: ThemeForest
 	// End Re sponsor swipper slider
 	/*------------------------------------------------------------------*/ 
 	
-	// circle progress bar js start
+	// circle skills bar js start
 	circle_progressbar: function() {
 		if($('.progressbar').length > 0){
 			$(document).ready(function(){
@@ -286,7 +286,7 @@ Assigned to: ThemeForest
 								fill: {
 									color: '#fff'
 								}
-							}).on('circle-animation-progress', function (event, progress, stepValue) {
+							}).on('circle-animation-skills', function (event, progress, stepValue) {
 								$(this).find('strong').text((stepValue*100).toFixed(0) + "%");
 							}).stop();
 						}
@@ -301,7 +301,7 @@ Assigned to: ThemeForest
 		}
 	},
 		
-	// circle progress bar js start
+	// circle skills bar js start
 	/*------------------------------------------------------------------*/ 
 	
 	// start map js

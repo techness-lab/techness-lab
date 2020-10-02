@@ -9,7 +9,7 @@
     import Education from './components/education/education';
     import Experience from './components/experience/experience';
     import Projects from './components/projects/projects';
-    import Progress from './components/progress/progress';
+    import Skills from './components/skills/skills';
     import Services from './components/services/services';
     import Sidebar from './components/sidebar/sidebar';
     import Slide from './components/slide/slide';
@@ -25,7 +25,7 @@
             Contact,
             Experience,
             Education,
-            Progress,
+            Skills,
             Projects,
             Services,
             Sidebar,

@@ -4,7 +4,17 @@
 
 <script>
     export default {
-        name: "about"
+        name: "about",
+        data() {
+            return {
+                openDetails: false
+            };
+        },
+        methods: {
+            toggleDetails() {
+                this.openDetails = !this.openDetails;
+            }
+        }
     }
 </script>
 

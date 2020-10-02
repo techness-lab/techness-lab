@@ -1,5 +1,5 @@
 /**
- * jquery-circle-progress - jQuery Plugin to draw animated circular progress bars:
+ * jquery-circle-skills - jQuery Plugin to draw animated circular skills bars:
  * {@link http://kottenator.github.io/jquery-circle-progress/}
  *
  * @author Rostyslav Bryzgunov <kottenator@gmail.com>
@@ -24,7 +24,7 @@
   }
 })(function($) {
   /**
-   * Inner implementation of the circle progress bar.
+   * Inner implementation of the circle skills bar.
    * The class is not exposed _yet_ but you can create an instance through jQuery method call.
    *
    * @param {object} config - You can customize any class member (property or method).
@@ -394,12 +394,12 @@
     },
 
     /**
-     * Animate the progress bar.
+     * Animate the skills bar.
      *
      * Throws 3 jQuery events:
      *
      * - `circle-animation-start(jqEvent)`
-     * - `circle-animation-progress(jqEvent, animationProgress, stepValue)` - multiple event
+     * - `circle-animation-skills(jqEvent, animationProgress, stepValue)` - multiple event
      *   animationProgress: from `0.0` to `1.0`; stepValue: from `0.0` to `value`
      * - `circle-animation-end(jqEvent)`
      *
@@ -421,7 +421,7 @@
           step: function(animationProgress) {
             var stepValue = self.animationStartValue * (1 - animationProgress) + v * animationProgress;
             self.drawFrame(stepValue);
-            el.trigger('circle-animation-progress', [animationProgress, stepValue]);
+            el.trigger('circle-animation-skills', [animationProgress, stepValue]);
           }
         }))
         .promise()
@@ -507,7 +507,7 @@
    * @alias "$(...).circleProgress"
    */
   $.fn.circleProgress = function(configOrCommand, commandArgument) {
-    var dataName = 'circle-progress',
+    var dataName = 'circle-skills',
       firstInstance = this.data(dataName);
 
     if (configOrCommand == 'widget') {

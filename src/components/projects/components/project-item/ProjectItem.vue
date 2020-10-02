@@ -1,10 +1,9 @@
-<template src="./skills.html">
-    
+<template src="./ProjectItem.html">
 </template>
 
 <script>
     export default {
-        name: "skills"
+        name: "ProjectItem"
     }
 </script>
 

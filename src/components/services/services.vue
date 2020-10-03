@@ -4,7 +4,12 @@
 
 <script>
     export default {
-        name: "services"
+        name: "services",
+        data() {
+            return {
+                publicPath: process.env.BASE_URL
+            };
+        }
     }
 </script>
 

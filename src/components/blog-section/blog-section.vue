@@ -1,4 +1,4 @@
-<template src="./blog.html">
+<template src="./blog-section.html">
 
 </template>
 
@@ -6,7 +6,7 @@
     import BlogPost from "./components/blog-post/BlogPost";
 
     export default {
-        name: "blog",
+        name: "BlogSection",
         components: {
             BlogPost
         }

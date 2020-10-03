@@ -1,11 +1,11 @@
-<template src="./services.html">
+<template src="./service-section.html">
 </template>
 
 <script>
     import ServiceBox from './components/service-box';
 
     export default {
-        name: 'services',
+        name: 'ServiceSection',
         components: {
             ServiceBox
         },

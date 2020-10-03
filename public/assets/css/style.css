@@ -21,7 +21,7 @@ Assigned to: ThemeForest
 14. map setions Css / .port_map_setions  
 15. Contact setions Css / .port_contact_wrapper  
 16. footer setions Css / .port_footer_setions 
-17. Single blog setions  Css / .port_singleblog_wrapper 
+17. Single blog-section setions  Css / .port_singleblog_wrapper
 18. Go to top  Css / .bottom_top  
 19. custom scrollbar Css
 20. Media Query Css 
@@ -1091,7 +1091,7 @@ p.banner_pera:after {
 
 /*================== 04 End banner css ==================  */
 
-/*================== 05 Start about section css ==================  */
+/*================== 05 Start about-section section css ==================  */
 
 /* start selfintro section */
 .right_section .port_heading_wrapper {
@@ -1300,9 +1300,9 @@ span.value a {
 }
 /* End selfintro section */
 
-/*================== 05 End about section css ==================  */
+/*================== 05 End about-section section css ==================  */
 
-/*================== 06 start education section css ==================  */
+/*================== 06 start education-section section css ==================  */
 .education_main_wrapper:after {
     content: "";
     position: absolute;
@@ -1567,9 +1567,9 @@ h3.education_place {
 	background:rgb(0, 200, 218);
 }
 
-/*================== 06 End education section css ==================  */
+/*================== 06 End education-section section css ==================  */
 
-/*================== 07 Start skills baar section css ==================  */
+/*================== 07 Start skill-section baar section css ==================  */
 .port_progress_setions {
     background: rgb(252, 194, 85);
     padding-bottom: 71px;
@@ -1621,7 +1621,7 @@ h3.education_place {
 }
 
 /* Progress bar css */
-/*================== 07 End skills baar section css ==================  */
+/*================== 07 End skill-section baar section css ==================  */
 
 /*================== 08 start Experience section css ==================  */
 .port_experience_setions{
@@ -2141,7 +2141,7 @@ h2.project_heading:after {
 	
 /*================== 11 End testimonial section css ==================  */
 
-/*================== 12 Start blog main section css ==================  */
+/*================== 12 Start blog-section main section css ==================  */
 
 .port_blog_setions .port_blog_imgbox {
     overflow: hidden;
@@ -2273,7 +2273,7 @@ h2.project_heading:after {
     left: -20px;
     right: 20px;
 }
-/*================== 12 End blog main section css ==================  */
+/*================== 12 End blog-section main section css ==================  */
 
 /*================== 13 Start responser section css ==================  */
 .port_responsor_setions {
@@ -2336,7 +2336,7 @@ h2.project_heading:after {
 }
 /*================== 14 End map section css ==================  */
 
-/*================== 15 Start contact section css ==================  */
+/*================== 15 Start contact-section section css ==================  */
 .port_contact_setions .port_contact_mainbox {
     max-width: 770px;
     height: auto;
@@ -2370,7 +2370,7 @@ h2.project_heading:after {
     padding-left: 18px;
     padding-top: 5px;
 }
-/*================== 15 End contact section css ==================  */
+/*================== 15 End contact-section section css ==================  */
 
 /*================== 16 footer section css ==================  */
 
@@ -2414,7 +2414,7 @@ h2.project_heading:after {
 }
 /*================== 16 End footer section css ==================  */
 
-/*================== 17 Start start single blog page css ==================  */
+/*================== 17 Start start single blog-section page css ==================  */
 .blog_wrapper .blog_data {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     background: #ffffff;
@@ -2736,7 +2736,7 @@ h2.project_heading:after {
 .port_singleblog_wrapper {
     background: #f9f9f9;
 }
-/*================== 17 End start single blog page css ==================  */
+/*================== 17 End start single blog-section page css ==================  */
 
 /*================== 18 Start start go to top css ==================  */
 .bottom_top {

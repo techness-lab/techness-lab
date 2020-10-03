@@ -1,10 +1,10 @@
-<template src="./slide.html">
+<template src="./skill-section.html">
     
 </template>
 
 <script>
     export default {
-        name: "slide"
+        name: "SkillSection"
     }
 </script>
 

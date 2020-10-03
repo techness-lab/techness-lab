@@ -1,10 +1,10 @@
-<template src="./education.html">
+<template src="./testimonial-section.html">
     
 </template>
 
 <script>
     export default {
-        name: "education"
+        name: "TestimonialSection"
     }
 </script>
 

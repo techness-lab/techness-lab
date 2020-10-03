@@ -1,10 +1,10 @@
-<template src="./experience.html">
+<template src="./slide-section.html">
     
 </template>
 
 <script>
     export default {
-        name: "experience"
+        name: "SlideSection"
     }
 </script>
 

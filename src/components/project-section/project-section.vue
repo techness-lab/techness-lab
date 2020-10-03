@@ -1,16 +1,16 @@
-<template src="./projects.html">
+<template src="./project-section.html">
 </template>
 
 <script>
     import ProjectItem from "./components/project-item/ProjectItem";
 
     export default {
-        name: "projects",
+        name: "ProjectSection",
         components: {
             ProjectItem
         }
     }
 </script>
 
-<style scoped src="./projects.css">
+<style scoped src="./project-section.css">
 </style>

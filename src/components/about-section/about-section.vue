@@ -1,10 +1,10 @@
-<template src="./about.html">
+<template src="./about-section.html">
     
 </template>
 
 <script>
     export default {
-        name: "about",
+        name: "AboutSection",
         data() {
             return {
                 openDetails: false

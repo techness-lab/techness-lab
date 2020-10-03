@@ -1,7 +1,5 @@
 <template src="./education-section.html">
-
 </template>
-
 <script>
     import EducationItem from './components/education-item';
 
@@ -50,7 +48,5 @@
         }
     };
 </script>
-
-<style scoped>
-
+<style scoped src="./education-section.css">
 </style>

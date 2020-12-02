@@ -3,26 +3,14 @@
         <div class="container">
             <div class="port_progress_mainbox">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-6 col-sm-6 text-center">
-                        <vue-ellipse-progress :progress="92" color="#fff" emptyColor="transparent" line="square">
-                            <p slot="legend-caption">Projects</p>
-                        </vue-ellipse-progress>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-sm-6 text-center">
-                        <vue-ellipse-progress :progress="100" color="#fff" emptyColor="transparent" line="square">
-                            <p slot="legend-caption">Team Work</p>
-                        </vue-ellipse-progress>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-sm-6 text-center">
-                        <vue-ellipse-progress :progress="95" color="#fff" emptyColor="transparent" line="square">
-                            <p slot="legend-value">Happy Clients</p>
-                        </vue-ellipse-progress>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-sm-6 text-center">
-                        <vue-ellipse-progress :progress="80" color="#fff" emptyColor="transparent" line="square">
-                            <p slot="legend-caption">Creativity</p>
+                    <div class="col-xl-3 col-lg-6 col-sm-6 text-center" v-for="item in skills">
+                        <vue-ellipse-progress
+                                :progress="item.progress"
+                                color="#fff"
+                                emptyColor="transparent"
+                                line="square"
+                        >
+                            <p slot="legend-caption">{{ item.value }}</p>
                         </vue-ellipse-progress>
                     </div>
                 </div>

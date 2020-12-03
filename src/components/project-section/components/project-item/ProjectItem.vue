@@ -3,7 +3,8 @@
 
 <script>
     export default {
-        name: "ProjectItem"
+        name: "ProjectItem",
+        props: ['alt', 'image', 'name', 'category']
     }
 </script>
 

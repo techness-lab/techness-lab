@@ -72,9 +72,14 @@
         },
         computed: {
             categories() {
-                const categoryMap = new Map();
-                this.projects.forEach(item => categoryMap.set(item.category, 1));
-                return categoryMap.keys();
+                return this.projects
+                    .map(item => item.category)
+                    .reduce((a, c) => {
+                        if (a.includes(c)) {
+                            return a;
+                        }
+                        return [...a, c];
+                    }, []);
             },
             filteredProjects() {
                 return this.activeFilter === '*' ?

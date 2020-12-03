@@ -1,5 +1,5 @@
 <div class="port_projects_setions prt_bottompadder50 prt_toppadder80 page_scroll" data-scroll="1"
-     id="project_sec"> <!-- start Portfolio section  -->
+     id="project_sec">
     <div class="projects_section">
         <div class="container">
             <div class="row">
@@ -15,28 +15,17 @@
                 <div class="port_project_gallery text-center">
                     <div class="gallery_nav">
                         <ul>
-                            <li><a class="gallery_active" data-filter="*">all</a></li>
-                            <li><a data-filter=".design"> Design</a></li>
-                            <li><a data-filter=".development">Development</a></li>
-                            <li><a data-filter=".photoshop">Photoshop</a></li>
-                            <li><a data-filter=".template">Template</a></li>
+                            <li><a class="gallery_active" v-on:click="changeFilter('*')">all </a></li>
+                            <li v-for="item in categories"><a v-on:click="changeFilter(item)">{{ item }}</a></li>
                         </ul>
                     </div>
                     <div class="gallery_container">
                         <div class="gallery_grid">
-                            <project-item></project-item>
-                            <project-item></project-item>
-                            <project-item></project-item>
-                            <project-item></project-item>
-                            <project-item></project-item>
-                            <project-item></project-item>
-                            <project-item></project-item>
-                            <project-item></project-item>
-                            <project-item></project-item>
+                            <project-item v-for="item in filteredProjects" v-bind="item"></project-item>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div><!-- End Portfolio section  -->
+</div>

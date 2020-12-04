@@ -18,8 +18,9 @@
                     {
                         level: `Senior`,
                         position: `UI/UX Designer`,
-                        entreprise: `Adobe`,
+                        enterprise: `Adobe`,
                         description: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
+                        moreContent: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
                         from: {
                             month: `Feb`,
                             year: 2018
@@ -32,8 +33,9 @@
                     {
                         level: `Senior`,
                         position: `UI/UX Designer`,
-                        entreprise: `Adobe`,
+                        enterprise: `Adobe`,
                         description: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
+                        moreContent: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
                         from: {
                             month: `Feb`,
                             year: 2018
@@ -46,8 +48,9 @@
                     {
                         level: `Senior`,
                         position: `PHP Developer`,
-                        entreprise: `Adobe`,
+                        enterprise: `Adobe`,
                         description: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
+                        moreContent: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
                         from: {
                             month: `Mar`,
                             year: 2014
@@ -60,8 +63,9 @@
                     {
                         level: `Senior`,
                         position: `PHP Developer`,
-                        entreprise: `Adobe`,
+                        enterprise: `Adobe`,
                         description: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
+                        moreContent: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
                         from: {
                             month: `Mar`,
                             year: 2014
@@ -74,8 +78,9 @@
                     {
                         level: `Senior`,
                         position: `UI/UX Designer`,
-                        entreprise: `Adobe`,
+                        enterprise: `Adobe`,
                         description: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
+                        moreContent: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
                         from: {
                             month: `Feb`,
                             year: 2018
@@ -88,8 +93,9 @@
                     {
                         level: `Senior`,
                         position: `UI/UX Designer`,
-                        entreprise: `Adobe`,
+                        enterprise: `Adobe`,
                         description: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
+                        moreContent: `Sed ut unde omnis iste natus errorsit totam rem aperiam are many variations...`,
                         from: {
                             month: `Feb`,
                             year: 2018

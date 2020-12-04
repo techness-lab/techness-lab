@@ -3,21 +3,20 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8 col-12 w-100">
                 <div class="ex_rightside">
-                    <h4>Senior PHP <span class="data_hover c-orange" data-hover="Developer">Developer</span>
+                    <h4>{{ level }} <span :class="{ 'c-orange': isEven, 'c-cyan': !isEven }" :data-hover="position"
+                                          class="data_hover">{{ position }}</span>
                     </h4>
-                    <span class="c-orange">Facebook</span>
-                    <p class="ex_details">Sed ut unde omnis iste natus error sit totam rem
-                        aperiam are many variations of done.</p>
-                    <p class="more_content">Extra contant Sed ut perspiciatis unde omnis iste
-                        natus.</p>
+                    <span :class="{ 'c-orange': isEven, 'c-cyan': !isEven }">{{ enterprise }}</span>
+                    <p class="ex_details">{{ description }}</p>
+                    <p class="more_content">{{ moreContent }}</p>
                     <a class="ex_btn">Read More</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-12 padding-0 w-100">
                 <div class="ex_leftside">
-                    <h1>2014</h1>
-                    <h4>Mar to Apr</h4>
-                    <h1>2015</h1>
+                    <h1>{{ from.year }}</h1>
+                    <h4>{{ from.month }} to {{ to.month }}</h4>
+                    <h1>{{ to.year }}</h1>
                 </div>
             </div>
         </div>

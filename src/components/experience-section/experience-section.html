@@ -13,9 +13,16 @@
             </div>
             <div class="row">
                 <template v-for="(experience, index) in experiences">
-                    <left-side-box-experience v-bind="experience" v-if="(Math.ceil(index / 2) % 2) === index % 2">
+                    <left-side-box-experience
+                            :is-even="index % 2 === 0" v-bind="experience"
+                            v-if="(Math.ceil(index / 2) % 2) === index % 2"
+                    >
                     </left-side-box-experience>
-                    <right-side-box-experience v-bind="experience" v-else>
+                    <right-side-box-experience
+                            :is-even="index % 2 === 0"
+                            v-bind="experience"
+                            v-else
+                    >
                     </right-side-box-experience>
                 </template>
             </div>

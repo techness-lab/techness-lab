@@ -1,12 +1,14 @@
 <template src="./education-section.html">
 </template>
 <script>
-    import EducationItem from './components/education-item';
+    import LeftSideEducationItem from './components/left-side-education-item/left-side-education-item';
+    import RightSideEducationItem from './components/right-side-education-item/right-side-education-item';
 
     export default {
         name: 'EducationSection',
         components: {
-            EducationItem
+            LeftSideEducationItem,
+            RightSideEducationItem
         },
         data() {
             return {

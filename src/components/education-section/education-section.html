@@ -12,7 +12,16 @@
                 </div>
                 <div class="col-md-12">
                     <div class="education_main_wrapper ">
-                        <education-item v-for="(item, index) in educations" v-bind="item" v-bind:rank="index"></education-item>
+                        <template v-for="(item, index) in educations">
+                            <left-side-education-item v-bind="item"
+                                                      v-bind:rank="index"
+                                                      v-if="(index + 1) % 2 !== 0"
+                            ></left-side-education-item>
+                            <right-side-education-item v-bind="item"
+                                                      v-bind:rank="index"
+                                                      v-else
+                            ></right-side-education-item>
+                        </template>
                     </div>
                 </div>
             </div>

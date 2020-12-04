@@ -1,0 +1,31 @@
+<div class="education_box education_firsrtbox firstbox">
+    <div class="row">
+        <div class="col-lg-6 col-md-4 col-sm-12 col-12 align-self-center">
+            <div class="education_mleft education_left ">
+                <div class="edu_mainyear edu_leftyear">
+                    <h1>{{ mainYear }}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-12 col-12 align-self-center">
+            <div class="education_mright education_right ">
+                <div class="education_minfo education_rinfo ">
+                    <div class="prt_rightside_title">
+                        <div class="left_title_box">
+                            <div class="left_title">
+                                <h4>{{ rank + 1 }}</h4>
+                            </div>
+                            <div class="right_title bg-pink">
+                                <h4>{{ label }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="education_place"><span :data-hover="diploma" class="data_hover">{{ diploma }} </span> {{
+                        curriculum }}</h3>
+                    <p>{{ details }}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

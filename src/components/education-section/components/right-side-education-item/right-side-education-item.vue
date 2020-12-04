@@ -1,9 +1,9 @@
-<template src="./education-item.html">
+<template src="./right-side-education-item.html">
 </template>
 
 <script>
     export default {
-        name: 'education-item',
+        name: 'RightSideEducationItem',
         props: {
             mainYear: Number,
             rank: Number,

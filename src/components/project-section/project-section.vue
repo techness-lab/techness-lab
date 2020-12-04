@@ -67,7 +67,8 @@
                         category: 'lorem'
                     }
                 ],
-                activeFilter: '*'
+                activeFilter: '*',
+                activeIndex: 0
             });
         },
         computed: {
@@ -88,7 +89,7 @@
             }
         },
         methods: {
-            changeFilter(filter) {
+            setAsActive(filter) {
                 this.activeFilter = filter;
             }
         }

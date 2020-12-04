@@ -15,13 +15,23 @@
                 <div class="port_project_gallery text-center">
                     <div class="gallery_nav">
                         <ul>
-                            <li><a class="gallery_active" v-on:click="changeFilter('*')">all </a></li>
-                            <li v-for="item in categories"><a v-on:click="changeFilter(item)">{{ item }}</a></li>
+                            <li v-on:click="setAsActive('*')"
+                            >
+                                <a :class="{ 'gallery_active': activeFilter === '*' }"
+                                >all </a>
+                            </li>
+                            <li :key="item"
+                                v-for="(item, index) in categories"
+                                v-on:click="setAsActive(item)"
+                            >
+                                <a :class="{ 'gallery_active': activeFilter === item }"
+                                >{{ item }}</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="gallery_container">
                         <div class="gallery_grid">
-                            <project-item v-for="item in filteredProjects" v-bind="item"></project-item>
+                            <project-item v-bind="item" v-for="item in filteredProjects"></project-item>
                         </div>
                     </div>
                 </div>

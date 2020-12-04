@@ -4,7 +4,7 @@
 <script>
     export default {
         name: "BlogPost",
-        props: ['layout']
+        props: ['picture', 'date', 'title', 'user', 'commentsNb', 'content']
     }
 </script>
 

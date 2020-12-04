@@ -1,4 +1,4 @@
-<div class="education_box education_firsrtbox firstbox">
+<div class="education_box education_firsrtbox" :class="circleClass">
     <div class="row">
         <div class="col-lg-6 col-md-4 col-sm-12 col-12 align-self-center">
             <div class="education_mleft education_left ">
@@ -15,17 +15,17 @@
                             <div class="left_title">
                                 <h4>{{ rank + 1 }}</h4>
                             </div>
-                            <div class="right_title bg-pink">
+                            <div class="right_title" :class="backgroundClass">
                                 <h4>{{ label }}</h4>
                             </div>
                         </div>
                     </div>
-                    <h3 class="education_place"><span :data-hover="diploma" class="data_hover">{{ diploma }} </span> {{
-                        curriculum }}</h3>
+                    <h3 class="education_place"><span :data-hover="Diploma" class="data_hover">{{ diploma }} </span> {{
+                        diploma }}</h3>
                     <p>{{ details }}</p>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
+

@@ -12,6 +12,18 @@
             diploma: String,
             curriculum: String,
             details: String
+        },
+        data() {
+            return ({
+                circleClass: {
+                    firstbox: this.rank % 4 === 1,
+                    fourthbox: this.rank % 2 === 1 && this.rank % 4 !== 1
+                },
+                backgroundClass: {
+                    'bg-pink': this.rank % 4 === 1,
+                    'bg-cyan': this.rank % 2 === 1 && this.rank % 4 !== 1
+                }
+            });
         }
     };
 </script>

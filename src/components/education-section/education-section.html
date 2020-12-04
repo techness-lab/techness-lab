@@ -15,7 +15,7 @@
                         <template v-for="(item, index) in educations">
                             <left-side-education-item v-bind="item"
                                                       v-bind:rank="index"
-                                                      v-if="(index + 1) % 2 !== 0"
+                                                      v-if="(index + 1) % 2 === 0"
                             ></left-side-education-item>
                             <right-side-education-item v-bind="item"
                                                       v-bind:rank="index"

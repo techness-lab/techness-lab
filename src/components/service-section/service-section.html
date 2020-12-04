@@ -1,4 +1,4 @@
-<div class="port_services_setions prt_toppadder80"> <!-- start service-section section  -->
+<div class="port_services_setions prt_toppadder80">
     <div class="services_section">
         <div class="container">
             <div class="row">
@@ -12,47 +12,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 text-center">
-                    <service-box description="Vestibulum condimentum vehicula massa, ac convallis nullarell"
-                                 heading="Web Design"
-                                 image-url="assets/images/services/port_services01.png"></service-box>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="port_services_box_wrapper">
-                        <service-box description="Vestibulum condimentum vehicula massa, ac convallis nullarell"
-                                     heading="Photoshop"
-                                     image-url="assets/images/services/port_services02.png"></service-box>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="port_services_box_wrapper">
-                        <service-box description="Vestibulum condimentum vehicula massa, ac convallis nullarell"
-                                     heading="Marketing"
-                                     image-url="assets/images/services/port_services03.png"></service-box>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="port_services_box_wrapper">
-                        <service-box description="Vestibulum condimentum vehicula massa, ac convallis nullarell"
-                                     heading="Illustrator"
-                                     image-url="assets/images/services/port_services04.png"></service-box>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="port_services_box_wrapper">
-                        <service-box description="Vestibulum condimentum vehicula massa, ac convallis nullarell"
-                                     heading="Social Media"
-                                     image-url="assets/images/services/port_services05.png"></service-box>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="port_services_box_wrapper">
-                        <service-box description="Vestibulum condimentum vehicula massa, ac convallis nullarell"
-                                     heading="Graphics"
-                                     image-url="assets/images/services/port_services06.png"></service-box>
-                    </div>
+                <div class="col-lg-4 col-md-6 text-center" v-for="service in services">
+                    <service-box v-bind="service"></service-box>
                 </div>
             </div>
         </div>
     </div>
-</div><!-- End Experience section  -->
+</div>

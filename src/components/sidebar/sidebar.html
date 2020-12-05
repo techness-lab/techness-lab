@@ -10,7 +10,7 @@
         <div class="port_sidebar_nav">
             <div class="port_navigation index_navigation">
                 <ul class="nav_list">
-                    <li data-number="0">
+                    <li data-number="0" :class="{ active: currentPage.includes('#about_sec') }">
                         <div class="tooltip_box">
                             <router-link class="siderbar_menuicon" to="#about_sec">
                                 <span class="first_micon">
@@ -60,7 +60,7 @@
                             <span class="menu_tooltip">About</span>
                         </div>
                     </li>
-                    <li data-number="1">
+                    <li data-number="1" :class="{ active: currentPage.includes('#project_sec') }">
                         <div class="tooltip_box">
                             <router-link class="siderbar_menuicon" to="#project_sec">
                                 <span class="first_micon">
@@ -85,7 +85,7 @@
                             <span class="menu_tooltip">Portfolio</span>
                         </div>
                     </li>
-                    <li data-number="2">
+                    <li data-number="2" :class="{ active: currentPage.includes('#testi_sec') }">
                         <div class="tooltip_box">
                             <router-link class="siderbar_menuicon" to="#testi_sec">
                                 <span class="first_micon">
@@ -122,7 +122,7 @@
                             <span class="menu_tooltip">Testimonial</span>
                         </div>
                     </li>
-                    <li data-number="3">
+                    <li data-number="3" :class="{ active: currentPage.includes('#contact_sec') }">
                         <div class="tooltip_box">
                             <router-link class="siderbar_menuicon" to="#contact_sec">
                                 <span class="first_micon">

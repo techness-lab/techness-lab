@@ -8,6 +8,11 @@
         name: "Sidebar",
         components: {
             vuescroll
+        },
+        computed: {
+            currentPage() {
+                return this.$route.fullPath;
+            }
         }
     }
 </script>

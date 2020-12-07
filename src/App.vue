@@ -52,10 +52,11 @@
                             }
                         }
                     });
-                } else {
-                    menuItems.forEach(i => i.classList.remove('active'));
-                    document.querySelector('.port_navigation .nav_list li:first').classList.add('active');
+                    return;
                 }
+                menuItems.forEach(i => i.classList.remove('active'));
+                document.querySelector('.port_navigation .nav_list li:first').classList.add('active');
+                return;
             }
         },
         mounted() {

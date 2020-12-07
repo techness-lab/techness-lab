@@ -47,7 +47,7 @@
                                 item => item.attributes.getNamedItem('data-number').value ==
                                     section.attributes.getNamedItem('data-scroll').value
                             );
-                            if (currentMenuItem){
+                            if (currentMenuItem) {
                                 currentMenuItem.classList.add('active');
                             }
                         }
@@ -59,7 +59,10 @@
             }
         },
         mounted() {
-            window.addEventListener('scroll', this.handleScroll);
+            window.addEventListener('scroll', this.handleScroll, false);
+        },
+        destroyed() {
+            window.removeEventListener('scroll', this.handleScroll, false);
         }
     }
 </script>

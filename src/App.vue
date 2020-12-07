@@ -32,6 +32,34 @@
             SlideSection,
             ToggleBox,
             TestimonialSection
+        },
+        methods: {
+            handleScroll() {
+                const windowScroll = document.documentElement.scrollTop;
+                const menuItems = document.querySelectorAll('.port_navigation .nav_list li');
+                if (windowScroll >= 0) {
+                    document.querySelectorAll('[data-scroll]').forEach((section) => {
+                        if (section.offsetTop <= windowScroll + 78) {
+                            menuItems.forEach(j => {
+                                j.classList.remove('active');
+                            });
+                            const currentMenuItem = Array.from(menuItems).find(
+                                item => item.attributes.getNamedItem('data-number').value ==
+                                    section.attributes.getNamedItem('data-scroll').value
+                            );
+                            if (currentMenuItem){
+                                currentMenuItem.classList.add('active');
+                            }
+                        }
+                    });
+                } else {
+                    menuItems.forEach(i => i.classList.remove('active'));
+                    document.querySelector('.port_navigation .nav_list li:first').classList.add('active');
+                }
+            }
+        },
+        mounted() {
+            window.addEventListener('scroll', this.handleScroll);
         }
     }
 </script>

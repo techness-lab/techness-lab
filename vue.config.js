@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/nyhasina/'
+    publicPath: '/techness-lab/'
 }
